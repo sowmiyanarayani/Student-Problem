@@ -6,7 +6,7 @@ const GradeInput = (context) => {
 	} = context;
 
 	return <div>
-		<label> Grade : </label>
+		<label>Grade : </label>
 		<select
 			type="radio"
 			value={ grade }
