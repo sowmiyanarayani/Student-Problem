@@ -4,7 +4,7 @@ const NameInput = (context) => {
  = context;
 
 	return <div>
-		<label> Student Name : </label>
+		<label> Name : </label>
 		<input
 			type="text"
 			value={ name }
