@@ -1,14 +1,14 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable max-lines-per-function */
-import Student from './Student ';
+import Student from './Student';
 const AddStudent = (context) => {
 	const { state: { studentDetails }} = context;
 
 	return (
-		<table>
+		<table className="grid">
 			<thead>
 				<tr>
-					<th> Name</th>
+					<th>Name</th>
 					<th>Roll No</th>
 					<th>Grade</th>
 					<th>English</th>
@@ -16,6 +16,8 @@ const AddStudent = (context) => {
 					<th>Maths</th>
 					<th>Science</th>
 					<th>Social</th>
+					<th>Total</th>
+					<th>Rank</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -30,6 +32,8 @@ const AddStudent = (context) => {
 						maths={ student.maths }
 						science={ student.science }
 						social={ student.social }
+						total={ student.total }
+						rank={ student.rank }
 					/>) }
 			</tbody>
 		</table>

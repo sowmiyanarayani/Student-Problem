@@ -6,7 +6,8 @@ import Subject from './Subject';
 import AddStudent from './AddStudent';
 import Button from './Button';
 
-const Display = (context) => <div>
+const Display = (context) => <div className="box">
+	<h1>Student Progress</h1>
 	<NameInput { ...context }/>
 	<RollNoInput { ...context }/>
 	<GradeInput { ...context }/>
