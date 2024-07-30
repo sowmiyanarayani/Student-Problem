@@ -5,7 +5,7 @@ const AddStudent = (context) => {
 	const { state: { studentDetails }} = context;
 
 	return (
-		<table className="grid">
+		<table>
 			<thead>
 				<tr>
 					<th>Name</th>
@@ -24,16 +24,7 @@ const AddStudent = (context) => {
 				{ studentDetails.map((student) =>
 					<Student
 						key={ student.id }
-						name={ student.name }
-						rollNo={ student.rollNo }
-						grade={ student.grade }
-						english={ student.english }
-						language={ student.language }
-						maths={ student.maths }
-						science={ student.science }
-						social={ student.social }
-						total={ student.total }
-						rank={ student.rank }
+						{ ...student }
 					/>) }
 			</tbody>
 		</table>

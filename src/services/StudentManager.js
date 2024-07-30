@@ -10,6 +10,7 @@ const StudentManager = {
 			},
 			config: { idLength },
 		} = context;
+
 		const totalMarks
 			= Number(english) + Number(language)
 			+ Number(maths) + Number(science) + Number(social);

@@ -3,10 +3,7 @@ const Student = ({
 	id, name, rollNo,
 	grade, english, language, maths, science, social, total, rank,
 }) =>
-	<tr
-		key={ id }
-		className={ `customer ${ rank } }` }
-	>
+	<tr key={ id }>
 		<td>{ name }</td>
 		<td>{ rollNo }</td>
 		<td>{ grade }</td>
@@ -16,7 +13,7 @@ const Student = ({
 		<td>{ science }</td>
 		<td>{ social }</td>
 		<td>{ total }</td>
-		<td>{ rank }</td>
+		<td className={ `student ${ rank } }` }>{ rank }</td>
 	</tr>;
 
 export default Student;
