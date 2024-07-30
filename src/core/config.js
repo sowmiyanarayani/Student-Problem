@@ -2,27 +2,27 @@ const config = {
 	idLength: 8,
 	subjects: [
 		{
-			label: 'English :',
+			label: 'English',
 			value: 'english',
 			event: 'setEnglish',
 		},
 		{
-			label: 'Tamil  :',
+			label: 'Tamil  ',
 			value: 'language',
 			event: 'setLanguage',
 		},
 		{
-			label: 'Maths :',
+			label: 'Maths  ',
 			value: 'maths',
 			event: 'setMaths',
 		},
 		{
-			label: 'Science :',
+			label: 'Science',
 			value: 'science',
 			event: 'setScience',
 		},
 		{
-			label: 'Social :',
+			label: 'Social ',
 			value: 'social',
 			event: 'setSocial',
 		},
