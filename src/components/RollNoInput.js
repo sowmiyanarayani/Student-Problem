@@ -3,7 +3,7 @@ const RollNoInput = (context) => {
 	const { state: { rollNo }, actions: { setRollNo }} = context;
 
 	return <div>
-		<label>RollNo : </label>
+		<label>RollNo </label>
 		<input
 			type="number"
 			placeholder="enter the Roll number"
