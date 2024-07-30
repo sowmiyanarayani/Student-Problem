@@ -1,10 +1,12 @@
 import { React } from 'react';
+import { peek } from '@laufire/utils/debug';
 const NameInput = (context) => {
 	const { actions: { setStudentName }, state: { name }}
  = context;
 
+	peek(context);
 	return <div>
-		<label> Name : </label>
+		<label> Name  </label>
 		<input
 			type="text"
 			value={ name }
