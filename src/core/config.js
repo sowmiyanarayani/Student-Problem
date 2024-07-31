@@ -7,7 +7,7 @@ const config = {
 			event: 'setEnglish',
 		},
 		{
-			label: 'Tamil  ',
+			label: 'Language  ',
 			value: 'language',
 			event: 'setLanguage',
 		},
