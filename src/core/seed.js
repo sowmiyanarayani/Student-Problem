@@ -8,6 +8,10 @@ const seed = {
 	science: '',
 	social: '',
 	studentDetails: [],
+	isEditing: false,
+	editedDetails: {},
+	cancel: false,
+	save: false,
 };
 
 export default seed;

@@ -27,6 +27,7 @@ const config = {
 			event: 'setSocial',
 		},
 	],
+
 };
 
 export default config;

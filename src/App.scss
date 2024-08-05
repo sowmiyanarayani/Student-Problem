@@ -34,10 +34,10 @@ th {
 	color: white;
 }
 .pass{
-	background-color: rgb(100, 145, 100);
+	color: rgb(30, 211, 30);
 }
 .fail{
-	background-color: rgb(223, 166, 166);
+	color: rgb(170, 3, 3);
 }
 label {
 	width: 50px;
@@ -45,9 +45,10 @@ label {
 	font-style: bold;
 	padding: 10px;
 	font-size: 15px;
+
 }
 .container {
-	background: white;
+	background: linear-gradient(rgb(224, 110, 129),rgb(115, 125, 209),rgb(224, 110, 129));
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -57,6 +58,9 @@ label {
 }
 .form-group {
 	margin-bottom: 15px;
+}
+.below-35 {
+		color: #e71227;
 }
 
 label {
@@ -81,7 +85,7 @@ select {
 	box-sizing: border-box;
 }
 button {
-	background-color: #4CAF50;
+	background-color: #124d91;
 	color: white;
 	border: none;
 	padding: 10px 15px;
