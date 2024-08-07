@@ -15,7 +15,6 @@ const AddStudent = (context) => <table>
 			<th>Total</th>
 			<th>Rank</th>
 			<th>Delete</th>
-			<th>Edit</th>
 		</tr>
 	</thead>
 	<tbody>
