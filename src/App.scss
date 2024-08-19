@@ -8,11 +8,44 @@
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	/* styles.css */
+
+.student-details {
+	margin-bottom: 15px;
+}
+
+.student-details label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+.student-details input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.student-details input:focus {
+	border-color: #007bff;
+	outline: none;
+}
+.student-inputs {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 table {
 	width: 100%;
 	margin-bottom: 20px;
 }
-h1{color: #4c5794;}
 .table {
 	border-collapse: collapse;
 	width: 100%;
@@ -29,7 +62,7 @@ th {
 	color: white;
 }
 .pass{
-	color: rgb(30, 211, 30);
+	color: rgb(33, 102, 33);
 }
 .fail{
 	color: rgb(170, 3, 3);
@@ -42,7 +75,7 @@ label {
 	font-size: 15px;
 }
 .container {
-	background: linear-gradient(rgb(224, 110, 129),rgb(115, 125, 209),rgb(224, 110, 129));
+
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -67,13 +100,6 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-}
-select{
-	width: 100%;
-	padding: 8px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
 }
 button{
 	background-color: #124d91;
