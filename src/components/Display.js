@@ -1,20 +1,13 @@
 import { React } from 'react';
-import NameInput from './NameInput';
-import GradeInput from './GradeInput';
-import RollNoInput from './RollNoInput';
-import Subject from './Subject';
 import AddStudent from './AddStudent';
 import Button from './Button';
+import StudentInputs from './StudentInputs';
 
 const Display = (context) => <div className="container">
 	<h1>Student Progress</h1>
-	<NameInput { ...context }/>
-	<RollNoInput { ...context }/>
-	<GradeInput { ...context }/>
-	<Subject { ...context }/>
+	<StudentInputs { ...context }/>
 	<Button { ...context }/>
 	<AddStudent { ...context }/>
-
 </div>;
 
 export default Display;
