@@ -5,7 +5,7 @@ const StudentDetails = (context) => {
 		data: { label, name, event, type, placeHolder },
 	} = context;
 
-	return <div className="student-details">
+	return <div className="form-group">
 
 		<label>{ label } </label>
 		<input
