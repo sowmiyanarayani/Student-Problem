@@ -21,12 +21,10 @@ button:hover {
 	padding: 10px;
 	background-color:lightblue;
 	background-image: url('../public/background.avif');
-
 }
-h1{font-style: italic;
-
+h1{
+	font-style: italic;
 }
-
 .form-group {
 	display: flex;
 	align-items: center;
@@ -50,7 +48,7 @@ h1{font-style: italic;
 }
 .pass{color: #45a049;}
 .fail{color: red;}
-.below-35{color:green}
+.below-35{color:rgb(206, 36, 7)}
 table {
 	border-collapse: collapse;
 	width: 100%;
@@ -64,8 +62,5 @@ th, td {
 th {
 	background-color: grey;
 	font-weight: bold;
-}
-tr:hover {
-	background-color: #f1f1f1;
 }
 }
