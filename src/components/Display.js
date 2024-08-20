@@ -4,7 +4,7 @@ import Button from './Button';
 import StudentInputs from './StudentInputs';
 
 const Display = (context) => <div className="container">
-	<h1>Student Form</h1>
+	<h1>STUDENT FORM</h1>
 	<StudentInputs { ...context }/>
 	<Button { ...context }/>
 	<AddStudent { ...context }/>
