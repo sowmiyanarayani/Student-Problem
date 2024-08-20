@@ -8,15 +8,41 @@ const setEnglish = ({ data }) => ({ english: data });
 const setMaths = ({ data }) => ({ maths: data });
 const setScience = ({ data }) => ({ science: data });
 const setSocial = ({ data }) => ({ social: data });
+
 const addStudent = (context) =>
 	({ studentDetails: StudentManager.addStudent(context) });
+
 const deleteStudent = (context) =>
 	({ studentDetails: StudentManager.deleteStudent(context) });
+
+const extractStudentDetails = (data) => {
+	const {
+		name, rollNo, grade, english, language, maths,
+		science, social, total, result,
+	} = data;
+
+	return {
+		name, rollNo, grade, english, language,
+		maths, science, social, total, result,
+	};
+};
+
+const setEditing = (context) => {
+	const { data } = context;
+
+	return {
+		editing: data,
+		...extractStudentDetails(data),
+	};
+};
+
+const editStudent = (context) =>
+	({ studentDetails: StudentManager.editStudent(context) });
 
 const actions = {
 	setStudentName, setStudentGrade, setRollNo,
 	setEnglish, setLanguage, setMaths, setScience, setSocial,
-	addStudent, deleteStudent,
+	addStudent, deleteStudent, editStudent, setEditing,
 };
 
 export default actions;
