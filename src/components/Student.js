@@ -5,26 +5,65 @@ import { React } from 'react';
 const below = (mark) => (mark < 35 ? 'below-35' : '');
 
 const Student = (context) => {
-	const { state: { studentDetails }, actions } = context;
+	const {
+		state: { studentDetails, name },
+		actions: { setEditing, editStudent, deleteStudent },
+	} = context;
 
-	return studentDetails.map((student) =>
-		<tr key={ student.id }>
-			<td>{ student.name }</td>
-			<td>{ student.rollNo }</td>
-			<td>{ student.grade }</td>
-			<td className={ below(student.english) }>{ student.english }</td>
-			<td className={ below(student.language) }>{ student.language }</td>
-			<td className={ below(student.maths) }>{ student.maths }</td>
-			<td className={ below(student.science) }>{ student.science }</td>
-			<td className={ below(student.social) }>{ student.social }</td>
-			<td>{ student.total }</td>
-			<td className={ ` ${ student.rank }` }>{ student.rank }</td>
-			<td>
-				<button onClick={ () => actions.deleteStudent(student.id) }>
-					Delete</button>
-			</td>
+	return (
+		<tbody>
+			{ studentDetails.map((student) =>
+				<tr key={ student.id }>
+					<td onClick={ () => setEditing(student) }>
+						{ student.name }</td>
+					<td onClick={ () => setEditing(student) }>
+						{ student.rollNo }</td>
+					<td onClick={ () => setEditing(student) }>
+						{ student.grade }</td>
+					<td
+						className={ below(student.english) }
+						onClick={ () => setEditing(student) }
+					>
+						{ student.english }</td>
+					<td
+						className={ below(student.language) }
+						onClick={ () => setEditing(student) }
+					>
+						{ student.language }</td>
+					<td
+						className={ below(student.maths) }
+						onClick={ () => setEditing(student) }
+					>
+						{ student.maths }</td>
+					<td
+						className={ below(student.science) }
+						onClick={ () => setEditing(student) }
+					>
+						{ student.science }</td>
+					<td
+						className={ below(student.social) }
+						onClick={ () => setEditing(student) }
+					>
+						{ student.social }</td>
+					<td>{ student.total }</td>
+					<td className={ ` ${ student.result }` }>{ student.result }</td>
+					<td>
+						<button
+							onClick={ () => deleteStudent(student.id) }
+						>
+							Delete</button>
+					</td>
+					<td>
+						<button
+							disabled={ !name }
+							onClick={ () => editStudent(student) }
+						>
+							Edit
+						</button>
+					</td>
 
-		</tr>);
+				</tr>) }
+		</tbody>);
 };
 
 export default Student;
