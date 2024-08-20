@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 /* eslint-disable no-magic-numbers */
 /* eslint-disable object-shorthand */
 /* eslint-disable max-len */
@@ -26,19 +25,13 @@ const StudentManager = {
 			config: { idLength },
 		} = context;
 
-		return [
-			...studentDetails,
-			rndString(idLength),
-			name,
-			rollNo,
-			grade,
-			english,
-			language,
-			maths,
-			science,
-			social,
+		const newStudent = {
+			id: rndString(idLength),
+			name, rollNo, grade, english, language, maths, science, social,
 			...calculateTotalAndResult({ english, language, maths, science, social }),
-		];
+		};
+
+		return [...studentDetails, newStudent];
 	},
 	deleteStudent: (context) => {
 		const { state: { studentDetails }, data } = context;
