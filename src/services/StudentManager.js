@@ -55,6 +55,7 @@ const StudentManager = {
 				}
 				: student));
 	},
+
 };
 
 export default StudentManager;

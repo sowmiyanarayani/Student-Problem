@@ -6,7 +6,7 @@ const below = (mark) => (mark < 35 ? 'below-35' : '');
 
 const Student = (context) => {
 	const {
-		state: { studentDetails, name },
+		state: { studentDetails, editing },
 		actions: { setEditing, editStudent, deleteStudent },
 	} = context;
 
@@ -51,11 +51,11 @@ const Student = (context) => {
 						<button
 							onClick={ () => deleteStudent(student.id) }
 						>
-							Delete</button>
+							clear</button>
 					</td>
 					<td>
 						<button
-							disabled={ !name }
+							disabled={ !editing }
 							onClick={ () => editStudent(student) }
 						>
 							Edit
