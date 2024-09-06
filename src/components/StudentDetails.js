@@ -13,6 +13,7 @@ const StudentDetails = (context) => {
 			placeholder={ placeHolder }
 			value={ state[name] }
 			onChange={ (e) => actions[event](e.target.value) }
+			required={ true }
 		/>
 	</div>;
 };

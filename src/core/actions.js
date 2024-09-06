@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 import StudentManager from '../services/StudentManager';
 
 const setStudentName = ({ data }) => ({ name: data });
@@ -39,10 +40,21 @@ const setEditing = (context) => {
 const editStudent = (context) =>
 	({ studentDetails: StudentManager.editStudent(context) });
 
+const resetForm = () => ({
+	name: '',
+	rollNo: '',
+	grade: '',
+	english: '',
+	language: '',
+	maths: '',
+	science: '',
+	social: '',
+});
+
 const actions = {
 	setStudentName, setStudentGrade, setRollNo,
 	setEnglish, setLanguage, setMaths, setScience, setSocial,
-	addStudent, deleteStudent, editStudent, setEditing,
+	addStudent, deleteStudent, editStudent, setEditing, resetForm,
 };
 
 export default actions;

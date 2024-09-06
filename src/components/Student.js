@@ -1,7 +1,6 @@
 /* eslint-disable max-lines-per-function */
 /* eslint-disable no-magic-numbers */
 import { React } from 'react';
-
 const below = (mark) => (mark < 35 ? 'below-35' : '');
 
 const Student = (context) => {
@@ -10,7 +9,23 @@ const Student = (context) => {
 		actions: { setEditing, editStudent, deleteStudent },
 	} = context;
 
-	return (
+	return <table className="student-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Roll No</th>
+				<th>Grade</th>
+				<th>Language</th>
+				<th>English</th>
+				<th>Maths</th>
+				<th>Science</th>
+				<th>Social</th>
+				<th>Total</th>
+				<th>Result</th>
+				<th>Clear</th>
+				<th>Edit</th>
+			</tr>
+		</thead>
 		<tbody>
 			{ studentDetails.map((student) =>
 				<tr key={ student.id }>
@@ -21,15 +36,15 @@ const Student = (context) => {
 					<td onClick={ () => setEditing(student) }>
 						{ student.grade }</td>
 					<td
-						className={ below(student.english) }
-						onClick={ () => setEditing(student) }
-					>
-						{ student.english }</td>
-					<td
 						className={ below(student.language) }
 						onClick={ () => setEditing(student) }
 					>
 						{ student.language }</td>
+					<td
+						className={ below(student.english) }
+						onClick={ () => setEditing(student) }
+					>
+						{ student.english }</td>
 					<td
 						className={ below(student.maths) }
 						onClick={ () => setEditing(student) }
@@ -63,7 +78,8 @@ const Student = (context) => {
 					</td>
 
 				</tr>) }
-		</tbody>);
+		</tbody>
+	</table>;
 };
 
 export default Student;

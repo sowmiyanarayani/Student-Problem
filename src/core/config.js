@@ -31,14 +31,14 @@ const config = {
 			placeHolder: 'Enter the Mark',
 		},
 		{
-			label: 'Language  ',
+			label: 'Language',
 			name: 'language',
 			event: 'setLanguage',
 			type: 'number',
 			placeHolder: 'Enter the Mark',
 		},
 		{
-			label: 'Maths  ',
+			label: 'Maths',
 			name: 'maths',
 			event: 'setMaths',
 			type: 'number',
