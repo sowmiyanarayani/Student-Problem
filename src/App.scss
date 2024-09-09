@@ -1,9 +1,7 @@
 body {
-
 background-size: contain;
 background-position: center;
 }
-
 .App {
   text-align: center;
 }
@@ -20,25 +18,26 @@ background-position: center;
 }
 
 h1 {
-  font-style: italic;
+  font-style: bold;
+	color:#16175e;
 }
 
-.form-group {
+.form{
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.form-group label {
+.form label {
   width: 20%;
   margin-right: 20px;
   text-align: right;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-style: italic;
+	font-style: bold;
   font-size: larger;
 }
 
-.form-group input {
+.form input {
   font-style: italic;
   width: 60%;
   padding: 10px;
@@ -72,14 +71,14 @@ button:hover {
   color: rgb(206, 36, 7);
 }
 
-.student-table {
-	width: 100%;
+.studentTable {
+	width: 95%;
 	border-collapse: collapse;
 	margin: 20px;
 	table-layout: fixed;
 }
 
-.student-table thead th {
+.studentTable thead th {
 	background-color: #afb653;
 	color:black;
 	padding: 12px 8px;
@@ -87,18 +86,14 @@ button:hover {
 	border: 1px solid black;
 }
 
-.student-table tbody td {
+.studentTable tbody td {
 	border: 1px solid #726a6a;
 	padding: 8px;
 	text-align: center;
 }
 
-.student-table tr:hover {
+.studentTable tr:hover {
 	background-color: #f1f1f1;
-}
-
-.below-35 {
-	background-color: #ffdddd;
 }
 
 button {
