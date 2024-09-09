@@ -9,13 +9,13 @@ const Student = (context) => {
 		actions: { setEditing, editStudent, deleteStudent },
 	} = context;
 
-	return <table className="student-table">
+	return <table className="studentTable">
 		<thead>
 			<tr>
 				<th>Name</th>
 				<th>Roll No</th>
 				<th>Grade</th>
-				<th>Language</th>
+				<th>Lang-1</th>
 				<th>English</th>
 				<th>Maths</th>
 				<th>Science</th>

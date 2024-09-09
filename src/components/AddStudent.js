@@ -2,7 +2,6 @@
 import { React } from 'react';
 import Student from './Student';
 const AddStudent = (context) => <table>
-
 	<tbody>
 		<Student { ...context }/>
 	</tbody>
