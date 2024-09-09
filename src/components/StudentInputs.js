@@ -4,7 +4,7 @@ const StudentInputs = (context) => {
 	const { config: { studentDetails }} = context;
 
 	return (
-		<div className="student-inputs">
+		<div className="studentInputs">
 			{ studentDetails.map((params, key) =>
 				<StudentDetails
 					key={ key }
